@@ -1,0 +1,493 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	font-family: Century copperplate;
+}
+
+html{
+	background: gray;
+	scroll-behavior: smooth;
+}
+
+/*Start of header section*/
+
+header{
+	position: relative;
+    height: 550px;
+    background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(./images/desktop.jpg);
+}
+
+header ul{
+	float: right;
+	list-style-type: none;
+	margin-top: 20px;
+	margin-left: 50px;
+}
+
+header ul li{
+	display: inline-block;
+}
+
+header ul li a{
+	position: 50%;
+	padding: 9px 20px;
+	color: #fff;
+	display: inline-block;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+header ul li a:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+header ul li.active a{
+    background-color: #fff;
+    color: #000;
+}
+
+/*End of header section*/
+
+
+/*Start of content section*/
+section
+{
+	position: relative;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5%;
+	max-height: 100%;
+}
+
+.container{
+	position: relative;
+	display: inline-flex;
+	height: 50%;
+	width: 60%;
+	margin-top: -26%;
+	margin-left: 20%;
+	background-color:  #c5d6e0;
+	z-index: 100%;
+
+}
+/*End of content section*/
+
+/*Start of styling container inside*/
+.container .left-column .photo{
+	width: 60%;
+	height: 60%;
+	margin: 30%;
+}
+
+.container .right-column{
+	padding: 5%;
+}
+
+.container .right-column .welcome{
+	font-size: 1.3rem;
+	font-family: sans-serif;
+}
+
+.container .right-column .welcome{
+	font-size: 1.3rem;
+	font-family: sans-serif;
+	letter-spacing: 4px;
+	overflow: hidden;
+	background: linear-gradient(90deg, #000, #2bff00, #000);
+	background-repeat: no-repeat;
+	background-size: 80%;
+	animation: animate 3s linear infinite;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+.container .right-column .text1{
+	color: black;
+	font-size: 20%;
+	font-weight: 700;
+	letter-spacing: 8px;
+	margin-bottom: 5px;
+	background: white;
+	position: relative;
+	animation: text 3s 1;
+}
+
+.container .right-column .text2{
+	font-size: 30px;
+	color: black;
+	font-weight: 700;
+}
+
+.weather-container{
+	width: 60%;
+	height: 30%;
+}
+
+@keyframes animate {
+	0% {
+	  background-position: -500%;
+	}
+	100% {
+	  background-position: 500%;
+	}
+  }
+
+  .button{
+	position: relative;
+	padding: 10px 30px;
+	text-decoration: none;
+	border: 2px solid red;
+	color: black;
+}
+
+.button:hover {
+	color: white;
+	background-color: crimson;
+}
+/*End of the conatiner section in the first page */
+
+
+/*Start of About section in the next page*/
+.introduction{
+	display: inline-flex;
+	width: 100%;
+	height: 90%;
+	text-align: center;
+}
+
+.introduction .left-side{
+	width: 50%;
+	padding: 2%;
+}
+
+.introduction .right-side{
+	width: 50%;
+}
+
+.title {
+	font-size: 3rem;
+	text-align: center;
+	 font-weight: bold;
+	-webkit-animation: glow 2s ease-in-out infinite alternate;
+	-moz-animation: glow 2s ease-in-out infinite alternate;
+	animation: glow 2s ease-in-out infinite alternate;
+  }
+  
+  @-webkit-keyframes glow {
+	 from {
+	 color: #fff;
+	 text-shadow: 0 0 10px gray, 0 0 20px gray, 0 0 30px gray, 0 0 40px gray, 0 0 50px 
+	 gray, 0 0 60px gray, 0 0 70px gray, 0 0 90px gray;
+	}
+	
+	to {
+	 color: gray;
+	 text-shadow: 0 0 20px gray, 0 0 30px gray, 0 0 40px gray, 0 0 50px gray, 
+	 0 0 60px gray	, 0 0 70px gray, 0 0 80px gray, 0 1 90px gray;
+	}
+  }
+
+  .introduction .left-side .details{
+	  color: whitesmoke;
+	  font-weight: 1000;
+  }
+
+.introduction .right-side .intro-pic{
+	border: 3px solid #ddd;
+	border-radius: 4px;
+	max-height: 90%;
+	max-width: 60%;
+	margin: 3%;
+}
+
+.intro-pic:hover {
+	box-shadow: 0 0 5px 4px rgba(0, 140, 186, 0.5);
+  }
+
+  .details{
+	color: black;
+	font-size: 1.1rem;
+	font-weight: 900;
+}
+
+/*End of About section in the next page*/
+
+
+
+/*Start of introduction in the second page
+  
+  
+
+  
+/*End of introduction in the second page
+  
+  /*Aligning titles to center
+  .journey{
+	text-align: center;
+  }
+  
+  h1 {
+  text-align: center;
+  }
+  /*End*/
+
+
+/*Start of skills section*/
+
+.skills-container{
+	width: 100%;
+	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color:  #3ca0d9;
+}
+  
+  .skills-container .left-skills{
+	width: 50%;
+	min-height: 10vh;
+	padding: 6rem 1rem;
+	flex-direction: column
+  }
+
+  .skills-container .right-skills{
+	width: 50%;
+	min-height: 10vh;
+	padding: 6rem 1rem;
+	flex-direction: column
+  }
+  
+  .skl-container {
+	margin-top: 10px;
+	width: 100%;
+	background-color: #ddd;
+  }
+  /*End of skills section*/
+
+  /* start of skills bar styling */
+  .word {width: 90%;background-color: rgb(13, 59, 208);} 
+  .python {width: 80%; background-color: rgb(13, 59, 208);} 
+  .java {width: 65%; background-color: rgb(13, 59, 208);} 
+  .photoshop {width: 60%; background-color:rgb(13, 59, 208);}
+  .comunication {width: 75%; background-color: rgb(13, 59, 208);}
+  .organization {width: 80%; background-color: rgb(13, 59, 208);}
+  .motivation {width: 90%; background-color:rgb(13, 59, 208);}
+  
+  /* End of skills bar styling*/
+
+   /* Start of timeline for Education and Experience*/
+  .timeline {
+	position: relative;
+	max-width: 1200px;
+	margin: 0 auto;
+  }
+  
+  .timeline::after {
+	content: '';
+	position: absolute;
+	width: 6px;
+	background-color: white;
+	top: 0;
+	bottom: 0;
+	left: 50%;
+	margin-left: -3px;
+  }
+
+  .timeline-container {
+	padding: 10px 40px;
+	position: relative;
+	background-color: inherit;
+	width: 50%;
+  }
+  
+  .timeline-container::after {
+	content: '';
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	right: -17px;
+	background-color: white;
+	border: 4px solid #FF9F55;
+	top: 15px;
+	border-radius: 50%;
+	z-index: 1;
+  }
+  
+  .left {
+	left: 0;
+  }
+  
+  .right {
+	left: 50%;
+  }
+  
+  .left::before {
+	content: " ";
+	height: 0;
+	position: absolute;
+	top: 22px;
+	width: 0;
+	z-index: 1;
+	right: 30px;
+	border: medium solid white;
+	border-width: 10px 0 10px 10px;
+	border-color: transparent transparent transparent white;
+  }
+  
+  .right::before {
+	content: " ";
+	height: 0;
+	position: absolute;
+	top: 22px;
+	width: 0;
+	z-index: 1;
+	left: 30px;
+	border: medium solid white;
+	border-width: 10px 10px 10px 0;
+	border-color: transparent white transparent transparent;
+  }
+  
+  .right::after {
+	left: -16px;
+  }
+  
+  .content {
+	padding: 20px 30px;
+	background-color: white;
+	position: relative;
+	border-radius: 6px;
+  }
+   /* End of timeline for Education and Experience */
+
+  /*Start of projects section */
+  .buttons {
+	position: relative;
+	background-color:#3ca0d9;
+	color: white;
+	padding: 20px 40px;
+	font-size: 16px;
+	left: 3%;
+	top: 30px;
+  }
+
+  .project-pic{
+	  padding: 7%;
+	  width: 70%;
+	  height: 50%;
+  }
+
+  .video{
+	  margin: 6%;
+  }
+  /*End of projects section */
+
+  
+  /* Start of footer section */
+  .fa {
+	position: relative;
+	padding: 20px;
+	width: 50px;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 50%;
+	background-color: white;
+	transition: 0.5s;
+	box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  .fa:hover {opacity: 0.7;transform: rotate(0deg) skew(0deg) translate(0, -10px)}
+  
+  .fa-facebook {background: #3B5998;color: white;}
+  .fa-telegram {background: #55ACEE;color: white;}
+  .fa-github{background: gray;color: white;}
+  .fa-whatsapp{background: chartreuse;color: white;}
+
+   /* Container for footer in the second page*/
+.footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px;
+}
+	  
+  /*End of Container for footer*/
+
+
+/*End Mobile view*/
+@media (max-width: 928px){
+	.introduction{
+		height: 700px;
+	}
+
+	header{
+		height: 800px;
+	}
+
+	.container{
+		width: 90%;
+		height: 100%;
+		margin-top: -100%;
+		margin-left: 5%;
+	}
+
+	
+	.container .left-column .photo{
+		width: 200px;
+		height: 200px;
+		margin: 10px;
+		margin-top: 160px;
+	}
+
+	.intro-pic {
+		position: relative;
+		max-width: 400px;
+		max-height: 700px;
+		top: 20%;
+	  }
+
+	.button{
+		padding: 5px 10px;
+	}
+
+	.timeline-container {
+		padding: 0px 10px;
+		width: 50%;
+	  }
+	  
+	  .right {
+		left: 50%;
+	  } 
+	  
+	
+	.buttons {
+		padding: 5px 15px;
+		font-size: 5px;
+	  }
+
+	.fa {
+		padding: 5px;
+		width: 30px;
+	}
+
+	.project-pic{
+		text-align: center;
+		margin: 10%;
+		padding: 5%;
+		width: 70%;
+		height: 50%;
+	}
+
+	.video{
+		margin: 10%;
+		padding: 5%;
+		width: 70%;
+		height: 50%;
+	}
+}
+
+/* End Mobile view*/
+
+
